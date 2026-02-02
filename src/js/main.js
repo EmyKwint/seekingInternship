@@ -106,7 +106,9 @@ function updateUi() {
             btn.disabled  = gameState.application < price;
         }
     });
+    //Energy Check
     isMyHeartGood();
+    amIOk();
     //Game saving
     localStorage.setItem('gameSaved', JSON.stringify(gameState));
 }
@@ -133,6 +135,10 @@ function isMyHeartGood() {
         location.reload();
         });
     }
+}
+//Get some rest
+function amIOk() {
+    applyBtn.disabled = gameState.energy < 1;
 }
 
 /*****************\ 
