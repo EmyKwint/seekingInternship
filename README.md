@@ -9,7 +9,7 @@ Petit Idle Game (jeu incrémental) humoristique sur la recherche de stage en tan
 *  **Gameplay** : Cliquer sur un bouton pour postuler, Automatiser, Gérer son énergie.
 
 *  **Difficulté** : Attention à votre énergie, à 0 vous ne pourrez pas postuler, si elle est trop haute
-(Évitez de dépasser 250, vous serez proche de votre limite) le Game Over est assuré. Toutes les minutes,
+(Évitez de dépasser 250, vous serez `proche de votre limite`) le Game Over est assuré. Toutes les minutes,
 vous pourrez prendre un café pour récupérer 50%.
 
 ## Fonctionnalités
@@ -29,12 +29,14 @@ pour l'auto-incrémentation.
 
 En attendant une mise en ligne (prochainement) :
 
-1. Clonez le dépôt : `git clone https://github.com/ton-pseudo/nom-du-projet.git`
+1. Clonez le dépôt : `git clone https://github.com/EmyKwint/seekingInternship.git`
 2. Ouvrez le dossier sur VSCode et lancez l'extension Live Server, ou via localhost.
 
-## Compétences Acquises
+## Systèmes
 
 * Gestion de boucles de jeu - `setInterval` / `updateUi();`.
 * Manipulation dynamique du **DOM**.
 * Sécurisation de données avec `innerText`.
-* Structure **POO** classes, objets, transformation et récupération via JSON.
+* Structure **POO** classes, objets, transformation et récupération via JSON .
+* **WIP** à venir : Simulation d'interview via qcm (Autre ?) lors de réponses favorables
+* **AMELIORER LE CSS**

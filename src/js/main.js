@@ -27,6 +27,15 @@ class Item {
         this.count++;
     }
 }
+//Class for interview
+class interview {
+    constructor(id, name, string) {
+        this.id     = id;
+        this.name   = name;
+        this.string = string;
+    }
+}
+
 //Game State
 let gameState = {
     energy: 100,
@@ -34,9 +43,11 @@ let gameState = {
     responses: 0,
     items: {
         automailer: new Item("Automailer", 15, 1),
-        linkedIn: new Item("LinkedIn", 150, 2),
-        Marcelia : new Item("Marcel.ia", 300, 10),
-        rhFriend: new Item("Ton ami RH", 500, 20)
+        thinkedIn: new Item("LinkedIn", 150, 2),
+        marcelia : new Item("Marcel.ia", 300, 10),
+        rhFriend: new Item("Ton ami RH", 1000, 20),
+        scriptPy: new Item("Learning python",5000, 200),
+        web_fetch: new Item("web_fetch.py", 9999, 666)
     }
 }
 /******************\ 
@@ -92,6 +103,7 @@ function updateUi() {
         if(!btn && (gameState.application >= item.basePrice || item.count > 0)) {
             btn    = document.createElement('button');
             btn.id = key;
+            btn.classList = "btn";
             document.querySelector('#tools').appendChild(btn);
             //Btn Buy Event
             btn.addEventListener('click', () => {
@@ -101,8 +113,9 @@ function updateUi() {
         //Item Update
         if(btn) {
             const price = item.CurrentPrice;
+            const rate  = item.totalRate;
             //Text Update
-            btn.innerText = `${item.name} (${price} candidatures requises) - Itérations : ${item.count}`;
+            btn.innerText = `${item.name} (${price} candidatures requises) - Itérations : ${item.count}, + ${rate}/sec`;
             btn.disabled  = gameState.application < price;
         }
     });
