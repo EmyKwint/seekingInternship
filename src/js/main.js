@@ -124,7 +124,7 @@ function itemIncrementation() {
     //Release dopamine
     gameState.application += autoIncrement;
 }
-//Energy joke (200% u go to hospital)
+//Energy joke (300% u go to hospital)
 function isMyHeartGood() {
     if(gameState.energy > 300) {
         openModal();  
@@ -165,7 +165,7 @@ setInterval(() => {
     itemIncrementation();
     updateUi();
 },  1000);
-//Check coffee
+//Coffee machine is up
 setInterval(() => {
     coffeeBtn.disabled = false;
     updateUi();
