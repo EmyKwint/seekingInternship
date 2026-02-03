@@ -28,7 +28,7 @@ class Item {
     }
 }
 //Class for interview
-class interview {
+class Interview {
     constructor(id, name, string) {
         this.id     = id;
         this.name   = name;
