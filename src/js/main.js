@@ -2,12 +2,12 @@
 *Class/Objects/Vars*
 \******************/
 //Game Stats
-const applyCounter  = document.querySelector('#applyCounter');
-const energyCounter = document.querySelector('#energyCounter');
-const responsesCounter = document.querySelector('#responsesCounter');
+const applyCounter  = document.querySelector('#score');
+const energyCounter = document.querySelector('#energy');
+const responsesCounter = document.querySelector('#response');
 //Game Component
-const applyBtn     = document.querySelector('#applyBtn');
-const coffeeBtn    = document.querySelector('#coffee');
+const applyBtn     = document.querySelector('#sendRequest');
+const coffeeBtn    = document.querySelector('#takeBreak');
 //Class for Items
 class Item {
     constructor(name, basePrice, rate) {
@@ -94,7 +94,7 @@ function buyItem(itemKey) {
 function updateUi() {
     //Update Stats
     applyCounter.innerText  = gameState.application;
-    energyCounter.innerText = gameState.energy + "%";
+    energyCounter.innerText = gameState.energy;
     //Item Update loop
     Object.keys(gameState.items).forEach(key => {
         const item = gameState.items[key];
@@ -104,7 +104,7 @@ function updateUi() {
             btn    = document.createElement('button');
             btn.id = key;
             btn.classList = "btn";
-            document.querySelector('#tools').appendChild(btn);
+            document.querySelector('#content').appendChild(btn);
             //Btn Buy Event
             btn.addEventListener('click', () => {
                 buyItem(key);

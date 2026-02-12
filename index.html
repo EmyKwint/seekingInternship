@@ -1,49 +1,65 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recherche de stage</title>
+    <title>seekingInternship</title>
     <script src="src/js/main.js" defer></script>
     <link href="src/css/style.css" rel="stylesheet">
 </head>
-<body class="">
+<body>
+        <header class="hero" id="hero">
+                <h1>Recherche de Stage</h1>
+        </header>
 
-    <header class="section header ">
-        <h1>Recherche de stage</h1>
-        <h2>Courage *emoji sourire*</h2>
-        <p>Bravo pour ta formation ! Maintenant, postule pour un stage !</p>
-        <p><strong>ATTENTION, l'abus de café peut être dangereux pour la santé</strong></p>
-    </header>
+        <section class="screen" id="screen">
 
-    <section class="section screen" id="screen ">
-        <div class="screen__info" id="screenInfo ">
-            <p>Demandes envoyées : <span class="counter screen__counter-apply" id="applyCounter">0</span> ! </p>
-            <p>Energie : <span class="counter screen__counter-energy" id="energyCounter">100%</span> ! </p>
-            <p>Réponse reçues : <span class="counter screen__counter-responses" id="responsesCounter">0</span> ! </p>
-        </div>
-        <div class="screen__apply" id="screenApply">
-            <button class="btn btn-apply" id="applyBtn">Envoyer candidature</button>
-            <button class="btn shop__coffee" id="coffee" disabled>Boire un café(+50% énergie)</button>
-        </div>
-        <div class="screen__shop" id="screenShop">
-            <h3>améliorations</h3>
-            <div id="tools"></div>
-        </div>
-        <div class="devZONE">
-            <button id="reset">RESET.DEV.ZONE</button>
-        </div>
-    </section>
-    <div class=modal id="modal">
-        <h4>L'abus de café peut nuire à la santé !</h4>
-        <p>Ton compteur est remis à à 0 après une semaine d'hospitalisation...</p>
-        <p>Ne pas dépasser 300% !</p>
-        <button id="modalBtn">D'accord</button>
+            <div class="program" id="program">
+                <div class="program__head">
+                    <div class="program__title">
+                        <h3>seekingInternship.html</h3>
+                    </div>
+                    <div class="program__score">
+                        <p>Demandes envoyées : <span id="score">0</span></p>
+                    </div>
+                </div>
+                
+                <div class="program__body">
+                    <aside class="program__aside">
+                        <div class="program__energy">
+                            <p>Energie : <span id="energy">100</span>%</p>
+                        </div>
+                        <div class="program__response">
+                            <p>Réponses : <span id="response">0</span></p>
+                        </div>
+                        <div class="program__clickZone">
+                            <button id="sendRequest">Envoyer une demande de stage</button>
+                            <button id="takeBreak">Prendre une pause café</button>
+                        </div>
+                    </aside>
+                    <div class="program__content" id="content"></div>
+                </div>    
+            </div>
+
+            <footer>
+                <button class="reset" id="reset">RESET</button>
+            </footer>
+
+        </section>
+
+        <section class="templates">
+            <div class=modal id="modal">
+                <h4>L'abus de café peut nuire à la santé !</h4>
+                <p>Ton compteur est remis à à 0 après une semaine d'hospitalisation...</p>
+                <p>Ne pas dépasser 300% !</p>
+                <button id="modalBtn">D'accord</button>
+            </div>
+
+            <div class="itw" id="itw">
+                <h3 id="itwTitle"></h3>
+                <p id="itwQuestion"></p>
+            <div id="itwResponses"></div>
     </div>
-    <div class="itw" id="itw">
-        <h3 id="itwTitle"></h3>
-        <p id="itwQuestion"></p>
-        <div id="itwResponses"></div>
-    </div>
+        </section>
 </body>
 </html>

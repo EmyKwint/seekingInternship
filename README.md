@@ -38,5 +38,5 @@ En attendant une mise en ligne (prochainement) :
 * Manipulation dynamique du **DOM**.
 * Sécurisation de données avec `innerText`.
 * Structure **POO** classes, objets, transformation et récupération via JSON .
-* **WIP** à venir : Simulation d'interview via qcm (Autre ?) lors de réponses favorables
+* **WIP** à venir : Simulation d'interview via qcm (Autre ?) lors de réponses favorables.
 * **AMELIORER LE CSS**
