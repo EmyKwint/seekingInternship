@@ -4,7 +4,7 @@
 /*________*/ 
 
 body {
-    background-image: url("/assets/img/background_body.jpg");
+    background-image: url("assets/img/background_body.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -56,7 +56,7 @@ button {
     justify-content: space-between;
     width: 1093px;
     height: 766px;
-    background-image: url("/assets/img/background_screen.jpg");
+    background-image: url("assets/img/background_screen.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
