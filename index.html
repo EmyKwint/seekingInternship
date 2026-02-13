@@ -18,9 +18,13 @@
                 <div class="program__head">
                     <div class="program__title">
                         <h3>seekingInternship.html</h3>
+                        <img class="program-exit" 
+                             src="assets/img/icons/24x24/actions/application-exit.png"
+                             alt="program's close button">
                     </div>
                     <div class="program__score">
                         <p>Demandes envoyées : <span id="score">0</span></p>
+                        <p class="gain">+<span id="gain"></span>/secondes</p>
                     </div>
                 </div>
                 
@@ -48,11 +52,26 @@
         </section>
 
         <section class="templates">
-            <div class=modal id="modal">
-                <h4>L'abus de café peut nuire à la santé !</h4>
-                <p>Ton compteur est remis à à 0 après une semaine d'hospitalisation...</p>
-                <p>Ne pas dépasser 300% !</p>
-                <button id="modalBtn">D'accord</button>
+            <div class="modal" id="modal">
+                <div class="program__title">
+                    <h4>L'abus de café peut nuire à la santé !</h4>
+                </div>
+                <div class="modal__body">
+                    <div class="modal__content">
+                        <div class="modal__content-icon">
+                            <img src="assets/img/icons/24x24/places/dialog-error.png"
+                                 alt="window error logo"
+                                 class="dialog-horror">
+                        </div>
+                        <div class="modal__content-txt">
+                            <p>Ton compteur est remis à 0 après une semaine d'hospitalisation...</p>
+                            <p>Ne pas dépasser 300% !</p>
+                        </div>
+                    </div>
+                    <div class="modal__btn">
+                        <button id="modalBtn">D'accord</button>
+                    </div>
+                </div>
             </div>
 
             <div class="itw" id="itw">

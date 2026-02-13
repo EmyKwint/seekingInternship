@@ -4,6 +4,7 @@
 //Game Stats
 const applyCounter  = document.querySelector('#score');
 const energyCounter = document.querySelector('#energy');
+const gainCounter   = document.querySelector('#gain');
 const responsesCounter = document.querySelector('#response');
 //Game Component
 const applyBtn     = document.querySelector('#sendRequest');
@@ -42,12 +43,12 @@ let gameState = {
     application: 0,
     responses: 0,
     items: {
-        automailer: new Item("Automailer", 15, 1),
-        thinkedIn: new Item("LinkedIn", 150, 2),
-        marcelia : new Item("Marcel.ia", 300, 10),
-        rhFriend: new Item("Ton ami RH", 1000, 20),
-        scriptPy: new Item("Learning python",5000, 200),
-        web_fetch: new Item("web_fetch.py", 9999, 666)
+        automailer: new Item("Automailer.bat", 50, 1),
+        thinkedIn: new Item("Poster sur LinkedIn", 100, 2),
+        marcelia : new Item("Marcel.ia", 500, 4),
+        rhFriend: new Item("Recherche de Piston", 1000, 8),
+        scriptPy: new Item("Apprendre Python",5000, 16),
+        web_fetch: new Item("web_fetch.py", 14999, 32)
     }
 }
 /******************\ 
@@ -136,10 +137,11 @@ function itemIncrementation() {
     });
     //Release dopamine
     gameState.application += autoIncrement;
+    gainCounter.innerText  = autoIncrement;
 }
-//Energy joke (300% u go to hospital)
+//Energy joke (301% u go to hospital)
 function isMyHeartGood() {
-    if(gameState.energy > 300) {
+    if(gameState.energy > 299) {
         openModal();  
         
         modalBtn.addEventListener('click', () => {

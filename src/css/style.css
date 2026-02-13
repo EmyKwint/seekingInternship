@@ -77,19 +77,25 @@ button {
 }
 
 .program__title {
-    padding: 2px;
-    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
     color: white;
     background: linear-gradient(180deg,rgba(230, 234, 216, 1) 0%, rgba(140, 170, 230, 1) 5%, rgba(164, 187, 226, 1) 100%, rgba(230, 234, 216, 1) 100%);
     border-radius: 5px 5px 0 0;
     height: 50px;
+    
 }
 .program__score {
+    display: flex;
+    justify-content: space-between;
     color: black;
     background: rgb(205, 204, 204);
-    border: solid 5px rgb(205, 204, 204);
     height: 40px;
-    justify-content: center;
+    padding-left: 10px;
+    border: solid 5px rgba(140, 170, 230, 1);
+    border-top: 0;
+    border-bottom: 0;
 }
 
 .program__body {
@@ -97,6 +103,8 @@ button {
     flex-direction: row;
     justify-content: space-between;
     background-color: rgb(237, 234, 231);
+    border: solid 5px rgba(140, 170, 230, 1);
+    border-top: 0;
 }
 
 .program__clickZone {
@@ -109,8 +117,8 @@ button {
 
 .program__aside {
     min-width: 200px;
-    border-top:  solid 5px rgb(63, 143, 214);
-    border-right: solid 5px rgb(63, 143, 214);
+    border-top:  solid 5px rgba(140, 170, 230, 1);
+    border-right: solid 5px rgba(140, 170, 230, 1);
     padding: 20px;
     margin: 0px;
 }
@@ -138,6 +146,20 @@ button {
     border: solid 1px rgb(16, 133, 1);
     border-radius: 0 15px 25px 0;
 }
+/*_________*/ 
+/*..icons..*/
+/*_________*/ 
+
+.dialog-horror {
+    width: 24px;
+    height: 24px;
+}
+
+.program-exit {
+    width: 32px;
+    height: 32px;
+    padding: 10px;
+}
 
 /*_________*/ 
 /*..modal..*/
@@ -146,14 +168,31 @@ button {
 .modal {
     display: none;
     flex-direction: column;
-    align-items: center;
+    text-align: start;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    border:  2px solid black;
-    border-radius: 5px;
+    border-radius: 5px 5px 0 0;
     box-shadow: 2px 3px 8px rgb(80, 80, 80);
-    padding: 9px;
+}
+
+.modal__body {
+    padding: 5px;
+    border: solid 5px rgba(140, 170, 230, 1);
+    border-top: 0;
+}
+
+.modal__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    column-gap: 15px;
+}
+
+.modal__btn {
+    text-align: center;
+    margin-bottom: 5px;
 }
