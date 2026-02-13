@@ -12,7 +12,7 @@ Petit Idle Game (jeu incrémental) humoristique sur la recherche de stage en tan
 (Évitez de dépasser 150, vous serez `proche de votre limite`) le Game Over est assuré. Toutes les minutes,
 vous pourrez prendre un café pour récupérer 50%.
 
-* icônes : `https://www.xfce-look.org/p/1215836`
+* icônes : `https://www.xfce-look.org/p/1215836`.
 
 ## Fonctionnalités
 
