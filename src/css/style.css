@@ -74,6 +74,7 @@ button {
     display: flex;
     flex-direction: column;
     text-align: start;
+    box-shadow: 5px 5px 10px rgba(69, 69, 69, 1);
 }
 
 .program__title {
@@ -132,6 +133,12 @@ button {
     gap: 10px;
 }
 
+/*________*/ 
+/*..misc..*/
+/*________*/
+.gain {
+    margin-right: 5px;
+}
 /*__________*/ 
 /*..footer..*/
 /*__________*/ 

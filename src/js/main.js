@@ -141,7 +141,7 @@ function itemIncrementation() {
 }
 //Energy joke (301% u go to hospital)
 function isMyHeartGood() {
-    if(gameState.energy > 299) {
+    if(gameState.energy > 199) {
         openModal();  
         
         modalBtn.addEventListener('click', () => {

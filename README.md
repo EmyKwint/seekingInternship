@@ -9,7 +9,7 @@ Petit Idle Game (jeu incrémental) humoristique sur la recherche de stage en tan
 *  **Gameplay** : Cliquer sur un bouton pour postuler, Automatiser, Gérer son énergie.
 
 *  **Difficulté** : Attention à votre énergie, à 0 vous ne pourrez pas postuler, si elle est trop haute
-(Évitez de dépasser 250, vous serez `proche de votre limite`) le Game Over est assuré. Toutes les minutes,
+(Évitez de dépasser 150, vous serez `proche de votre limite`) le Game Over est assuré. Toutes les minutes,
 vous pourrez prendre un café pour récupérer 50%.
 
 * icônes : `https://www.xfce-look.org/p/1215836`
