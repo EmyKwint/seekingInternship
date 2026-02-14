@@ -57,10 +57,9 @@ button {
     width: 1093px;
     height: 766px;
     background-image: url("../../assets/img/background_screen.webp");
-    background-size:contain;
+    background-size:cover;
     background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
+    background-repeat: no-repeat; 
     border: solid 15px;
 }
 

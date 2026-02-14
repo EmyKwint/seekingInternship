@@ -43,12 +43,13 @@ let gameState = {
     application: 0,
     responses: 0,
     items: {
-        automailer: new Item("Automailer.bat", 50, 1),
+        automailer: new Item("automailer.bat", 50, 1),
         thinkedIn: new Item("Poster sur LinkedIn", 100, 2),
         marcelia : new Item("Marcel.ia", 500, 4),
         rhFriend: new Item("Recherche de Piston", 1000, 8),
         scriptPy: new Item("Apprendre Python",5000, 16),
-        web_fetch: new Item("web_fetch.py", 14999, 32)
+        web_fetch: new Item("web_fetch.py", 14999, 32),
+        hacking: new Item("Hacker 'JobApp'", 42000, 64)
     }
 }
 /******************\ 
