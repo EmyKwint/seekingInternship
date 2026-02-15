@@ -30,6 +30,12 @@ button {
     border-style: inset;
     border-radius: 2px;
 }
+button:hover {
+    background-color: rgb(227, 227, 227);
+}
+button:active {
+    box-shadow: inset 5px 5px 1px rgb(114, 114, 114, 0.5);
+}
 
 /*___________*/ 
 /*..classes..*/
