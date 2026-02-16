@@ -1,4 +1,3 @@
-
 export class Item {
     constructor(name, basePrice, rate, count = 0) {
         this.name      = name;
